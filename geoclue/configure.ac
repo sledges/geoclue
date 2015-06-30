@@ -57,6 +57,13 @@ PKG_CHECK_MODULES(MASTER, [
 AC_SUBST(MASTER_LIBS)
 AC_SUBST(MASTER_CFLAGS)
 
+PKG_CHECK_MODULES([DROIDHEADERS], [android-headers])
+AC_SUBST(DROIDHEADERS_CFLAGS)
+
+PKG_CHECK_MODULES([HYBRIS], [libhardware >= 0.1.0])
+AC_SUBST(HYBRIS_CFLAGS)
+AC_SUBST(HYBRIS_LIBS)
+
 AC_PATH_PROG(DBUS_BINDING_TOOL, dbus-binding-tool)
 AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 
@@ -166,7 +173,7 @@ fi
 AC_SUBST(CONNECTIVITY_LIBS)
 AC_SUBST(CONNECTIVITY_CFLAGS)
 
-PROVIDER_SUBDIRS="example hostip geonames nominatim manual plazes localnet yahoo gsmloc"
+PROVIDER_SUBDIRS="example hostip hybris geonames nominatim manual plazes localnet yahoo gsmloc"
 
 # -----------------------------------------------------------
 # gypsy / gpsd / skyhook
@@ -265,6 +272,7 @@ providers/example/Makefile
 providers/gypsy/Makefile
 providers/gpsd/Makefile
 providers/hostip/Makefile
+providers/hybris/Makefile
 providers/geonames/Makefile
 providers/manual/Makefile
 providers/nominatim/Makefile

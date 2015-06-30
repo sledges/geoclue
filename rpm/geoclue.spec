@@ -97,6 +97,18 @@ Group: System/Libraries
 %{_datadir}/geoclue-providers/geoclue-hostip.provider
 %{_libexecdir}/geoclue-hostip
 
+%package provider-hybris
+Summary: provider for %{name}
+Group: System/Libraries
+
+%description provider-hybris
+%{summary}.
+
+%files provider-hybris
+%defattr(-,root,root,-)
+%{_datadir}/dbus-1/services/org.freedesktop.Geoclue.Providers.Hybris.service
+%{_datadir}/geoclue-providers/geoclue-hybris.provider
+%{_libexecdir}/geoclue-hybris
 
 %package provider-localnet
 Summary: Localnet provider for %{name}
