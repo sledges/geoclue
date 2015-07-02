@@ -13,6 +13,7 @@ BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(android-headers)
+BuildRequires: pkgconfig(libhardware)
 BuildRequires: autoconf
 BuildRequires: libxslt
 
