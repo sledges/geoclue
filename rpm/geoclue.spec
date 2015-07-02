@@ -12,6 +12,7 @@ BuildRequires: pkgconfig(dbus-glib-1)
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: pkgconfig(glib-2.0)
+BuildRequires: pkgconfig(android-headers)
 BuildRequires: autoconf
 BuildRequires: libxslt
 
